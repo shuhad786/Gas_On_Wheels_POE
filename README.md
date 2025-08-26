@@ -286,6 +286,23 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+References: 
 
+image 1.png https://www.builders.co.za/Outdoor-Garden-and-Patio/Camping/Gas-Fittings-and-Cartridges/Watex-Gas-Hose-and-Clamps-2000-mm-LPG8002/p/000000000000713226
+
+image 2.png https://www.adendorff.co.za/mac-afric-lp-gas-regulator-168-bulnose-hregul002
+
+image 3.png https://www.bobshop.co.za/lp-gas-regulator-90-degree-swiveltype/p/644809141
+
+image 4.png https://www.cashconverters.co.za/product/cadac-skottle-gas-braai/
+
+image 5.png https://calvertgas.co.za/safety/
+
+image 6.png https://www.co2masters.com/post/2018/03/25/how-can-you-detect-gas-leaks-before-they-happen
+
+image 7.png https://www.facebook.com/photo.php?fbid=1900654083524578&id=1877977535792233&set=a.1879729632283690
+
+image 8.png Screenshot from google maps
+
+image 9.png Screenshot from google maps
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
