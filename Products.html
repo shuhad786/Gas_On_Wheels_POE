@@ -3,88 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/456adb4b31.js" crossorigin="anonymous"></script>
+  <title>Products Page</title>
 </head>
 <body>
-  <nav>
-    <h1>Gas on Wheels</h1>
-    <a href="index.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Products.html">Products</a>
-    <a href="Services.html">Services</a>
-    <a href="Contact.html">Contact Us</a>
+  <nav class="flex h-nav items-center justify-between bg-black pl-4 pr-4">
+    <div class="flex">
+      <h1 class="text-3xl text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
+    </div>
+    <div class="flex w-nav-links justify-evenly text-xl">
+      <a class="text-orange text-deco-none" href="index.html">Home</a>
+      <a class="text-orange text-deco-none" href="About.html">About</a>
+      <a class="text-orange text-deco-none" href="Products.html">Products</a>
+      <a class="text-orange text-deco-none" href="Services.html">Services</a>
+      <a class="text-orange text-deco-none" href="Contact.html">Contact Us</a>
+    </div>
   </nav>
-  <div>
-    <div>
-      <ul>
-        <h5>Cylinders sizes available for purchase</h5>
-        <li>5kg (Refill only)</li>
-        <li>7kg (Refill only)</li>
-        <li>9kg (Exchange or Refill)</li>
-        <li>14kg (Exchange or Refill)</li>
-        <li>19kg (Exchange or Refill)</li>
-        <li>48kg (Exchange or Refill)</li>
-      </ul>
-      <img>src="" alt="Cylinders sizes"/>
+  <div class="drop-box-shadow-2 h-fit my-12 mx-12 rounded-sm flex flex-col items-center">
+    <div class="flex items-end justify-around">
+      <div class="flex flex-col">  
+        <h5 class="text-2xl font-roboto-slab">Cylinders sizes available for purchase</h5>
+        <ul class="mt-4">
+          <li class="list-none mb-1 text-orange-dark">5kg (Refill only)</li>
+          <li class="list-none mb-1 text-orange-dark">7kg (Refill only)</li>
+          <li class="list-none mb-1 text-orange-dark">9kg (Exchange or Refill)</li>
+          <li class="list-none mb-1 text-orange-dark">14kg (Exchange or Refill)</li>
+          <li class="list-none mb-1 text-orange-dark">19kg (Exchange or Refill)</li>
+          <li class="list-none mb-1 text-orange-dark">48kg (Exchange or Refill)</li>
+        </ul>
+      </div>
+      <img src="assets/background-image.png" alt="Cylinders sizes"/>
     </div>
 
-    <div>
-      <ul>
-        <h5>Fittings and Regulators</h5>
-        <li>Watex LP Gas Hose</li>
-        <li>Hose Clamps (8mm x 2mm)</li>
-        <li>LP Gas Regulator Bulnose</li>
-        <li>LP Gas Regulator 90 Degree</li>
-        <li>Skottel braai Gas Stove</li>
-        <li>etc</li>
-      </ul>
-      <img>src="" alt="Hose and clamps"/>
-      <img>src="" alt="Regulators"/>
-      <img>src="" alt="Gas burners"/>
-      <img>src="" alt="90 degree Regulators"/>
+    <div class="flex items-center justify-around w-full">
+      <div class="flex flex-col">  
+        <h5 class="text-2xl font-roboto-slab">Fittings and Regulators</h5>
+        <ul>
+          <li class="list-none mb-1 text-orange-dark">Watex LP Gas Hose</li>
+          <li class="list-none mb-1 text-orange-dark">Hose Clamps (8mm x 2mm)</li>
+          <li class="list-none mb-1 text-orange-dark">LP Gas Regulator Bulnose</li>
+          <li class="list-none mb-1 text-orange-dark">LP Gas Regulator 90 Degree</li>
+          <li class="list-none mb-1 text-orange-dark">Skottel braai Gas Stove</li>
+          <li class="list-none mb-1 text-orange-dark">etc</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <img class="image-1" src="assets/image 1.png" alt="Hose and clamps"/>
+        <img class="image-1" src="assets/image 2.png" alt="Regulators"/>
+        <img class="image-1" src="assets/image 4.png" alt="Gas burners"/>
+        <img class="image-1" src="assets/image 3.png" alt="90 degree Regulators"/>
+      </div>
     </div>
 
-    <div>
-      <ul>
-        <h5>Alternative gas and Welding</h5>
-        <li>Mapp gas</li>
-        <li>Butane gas</li>
-        <li>Propane gas</li>
-        <li>Welding torch burners</li>
-        <li>etc</li>
-      </ul>
-      <img>src="" alt="butane gas"/>
-      <img>src="" alt="Mapp gas"/>
-      <img>src="" alt="Propane gas"/>
-      <img>src="" alt="welding torch burners"/>
+    <div class="flex items-center justify-around w-full">
+      <div class="flex flex-col">
+        <h5 class="text-2xl font-roboto-slab">Alternative gas and Welding</h5>
+        <ul>
+          <li class="list-none mb-1 text-orange-dark">Mapp gas</li>
+          <li class="list-none mb-1 text-orange-dark">Butane gas</li>
+          <li class="list-none mb-1 text-orange-dark">Welding torch burners</li>
+          <li class="list-none mb-1 text-orange-dark">etc</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <img class="image-2" src="assets/butane gas.png" alt="butane gas"/>
+        <img class="image-3" src="assets/mapp gas.png" alt="Mapp gas"/>
+        <img class="image-3" src="assets/welding torch.png" alt="welding torch burners"/>
+      </div>
     </div>
   </div>
-  <footer>
+  <footer class="flex h-fit bg-black justify-evenly items-center text-white p-6">
     <ul>
-      <h5>Compliance</h5>
-      <li>Gas Handling</li>
-      <li>SABS Certificate</li>
-      <li>Regulations and Safe Practices</li>
+      <h5 class="text-xl">Compliance</h5>
+      <li class="text-xs mt-1">Gas Handling</li>
+      <li class="text-xs mt-1">SABS Certificate</li>
+      <li class="text-xs mt-1 w-li">Regulations and Safe Practices</li>
     </ul>
     <ul>
-      <h5>FAQS</h5>
-      <li>Gas Tips</li>
-      <li>Private Policy</li>
-      <li>Purchases</li>
+      <h5 class="text-xl">FAQS</h5>
+      <li class="text-xs mt-1">Gas Tips</li>
+      <li class="text-xs mt-1">Private Policy</li>
+      <li class="text-xs mt-1">Purchases</li>
     </ul>
     <ul>
-      <h5>Head Office</h5>
-      <li>13 Foreshore Avenue,<br/>Greenwich,<br/>Cape Town</li>
-      <li>021-7624567</li>
+      <h5 class="text-xl">Head Office</h5>
+      <li class="text-xs mt-1">13 Foreshore<br/>Avenue,Greenwich,<br/>Cape Town</li>
+      <li class="text-xs mt-1">021-7624567</li>
     </ul>
     <ul>
-      <h5>Branch Office</h5>
-      <li>456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
-      <li>031-3345789</li>
+      <h5 class="text-xl">Branch Office</h5>
+      <li class="text-xs mt-1">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
+      <li class="text-xs mt-1">031-3345789</li>
     </ul>
-    <div>
-      <button>Enquire</button>
-      <p>Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
+    <div class="flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
+      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
+      <p class="text-center font-roboto-condensed">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
 </body>
