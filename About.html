@@ -3,57 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/456adb4b31.js" crossorigin="anonymous"></script>
+  <title>About Page</title>
 </head>
 <body>
-  <nav>
-    <h1>Gas on Wheels</h1>
-    <a href="index.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Products.html">Products</a>
-    <a href="Services.html">Services</a>
-    <a href="Contact.html">Contact Us</a>
+  <nav class="flex h-nav items-center justify-between bg-black pl-4 pr-4">
+    <div class="flex">
+      <h1 class="text-3xl text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
+    </div>
+    <div class="flex w-nav-links justify-evenly text-xl">
+      <a class="text-orange text-deco-none" href="index.html">Home</a>
+      <a class="text-orange text-deco-none" href="About.html">About</a>
+      <a class="text-orange text-deco-none" href="Products.html">Products</a>
+      <a class="text-orange text-deco-none" href="Services.html">Services</a>
+      <a class="text-orange text-deco-none" href="Contact.html">Contact Us</a>
+    </div>
   </nav>
-  <div>
-    <h1>Our history</h1>
-    <p>Founded in 2023, GasOnWheels is a local business dedicated to providing reliable
-      <br/>and safe LP gas supply to households and small businesses. The company has
-      <br/>established a reputation for prompt delivery, safety compliance, and exceptional
-      <br/>customer service, particularly in meeting after-hours demands.
-    </p>
-    <h1>Our mission</h1>
-    <p>To deliver safe, affordable, and accessible LP gas solutions to our community.</p>
-    <h1>Our vision</h1>
-    <p>To be the leading provider of clean energy solutions in the region, promoting
-      <br/>safety and sustainability.
-    </p>
+  <div class="image">
+    <div class="flex flex-col drop-box-shadow-2 h-fit w-fit my-12 mx-12 rounded-sm p-6">
+      <h1 class="text-4xl font-roboto-slab">Our history</h1>
+      <p class="text-xl font-rubik-italic text-orange-dark">
+        Founded in 2023, GasOnWheels is a local business dedicated to providing reliable
+        and safe LP gas supply to households and small businesses. The company has
+        established a reputation for prompt delivery, safety compliance, and exceptional
+        customer service, particularly in meeting after-hours demands.
+      </p>
+      <h1 class="text-4xl font-roboto-slab">Our mission</h1>
+      <p class="text-xl font-rubik-italic text-orange-dark">To deliver safe, affordable, and accessible LP gas solutions to our community.</p>
+      <h1 class="text-4xl font-roboto-slab">Our vision</h1>
+      <p class="text-xl font-rubik-italic text-orange-dark">To be the leading provider of clean energy solutions in the region, promoting safety and sustainability.</p>
+    </div>
   </div>
-  <footer>
+  <footer class="flex bg-black justify-evenly items-center text-white p-6">
     <ul>
-      <h5>Compliance</h5>
-      <li>Gas Handling</li>
-      <li>SABS Certificate</li>
-      <li>Regulations and Safe Practices</li>
+      <h5 class="text-xl">Compliance</h5>
+      <li class="text-xs mt-1">Gas Handling</li>
+      <li class="text-xs mt-1">SABS Certificate</li>
+      <li class="text-xs mt-1 w-li">Regulations and Safe Practices</li>
     </ul>
     <ul>
-      <h5>FAQS</h5>
-      <li>Gas Tips</li>
-      <li>Private Policy</li>
-      <li>Purchases</li>
+      <h5 class="text-xl">FAQS</h5>
+      <li class="text-xs mt-1">Gas Tips</li>
+      <li class="text-xs mt-1">Private Policy</li>
+      <li class="text-xs mt-1">Purchases</li>
     </ul>
     <ul>
-      <h5>Head Office</h5>
-      <li>13 Foreshore Avenue,<br/>Greenwich,<br/>Cape Town</li>
-      <li>021-7624567</li>
+      <h5 class="text-xl">Head Office</h5>
+      <li class="text-xs mt-1">13 Foreshore<br/>Avenue,Greenwich,<br/>Cape Town</li>
+      <li class="text-xs mt-1">021-7624567</li>
     </ul>
     <ul>
-      <h5>Branch Office</h5>
-      <li>456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
-      <li>031-3345789</li>
+      <h5 class="text-xl">Branch Office</h5>
+      <li class="text-xs mt-1">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
+      <li class="text-xs mt-1">031-3345789</li>
     </ul>
-    <div>
-      <button>Enquire</button>
-      <p>Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
+    <div class="flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
+      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
+      <p class="text-center font-roboto-condensed">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
 </body>

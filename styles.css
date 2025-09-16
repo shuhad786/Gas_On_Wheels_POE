@@ -98,6 +98,7 @@ html, body {
 .items-center { align-items: center; }
 .items-start  { align-items: flex-start; }
 .items-end    { align-items: flex-end; }
+.align-items
 .justify-center { justify-content: center; }
 .justify-between { justify-content: space-between; }
 .justify-evenly { justify-content: space-evenly; }
@@ -112,19 +113,27 @@ html, body {
 .w-auto       { width: auto; }
 .w-fit        { width: fit-content; }
 .w-bubble     { width: 50%; }
+.w-input      { width: 100%; }
+.w-textarea   { width: 100%; }
 .w-footer     { width: 35%; }
 .w-button-1   { width: 15rem; }
 .h-button-1   { height: 3.5rem; }
 .w-button-2   { width: 8rem; }
 .h-button-2   { height: 3rem; }
+.w-button-3   { width: 7rem; }
+.h-button-3   { height: 2.7rem; }
 .h-auto       { height: auto; }
 .h-fit        { height: fit-content; }
 .h-bubble     { height: 16rem; }
+.h-input      { height: 3rem; }
+.h-textarea   { height: 10rem; }
 .h-footer     { height: 10rem; }
 .max-w-sm     { max-width: 24rem; }
 .max-w-md     { max-width: 28rem; }
 .max-w-lg     { max-width: 32rem; }
 .p-4          { padding: 1rem; }
+.px-1         { padding-left: 0.5rem; padding-right: 0.25rem; }
+.p-1          { padding: 0.5rem; }
 .pl-4         { padding-left: 15rem; }
 .pr-4         { padding-right: 1rem; }
 .pt-4         { padding-top: 3rem; }
@@ -173,6 +182,7 @@ html, body {
 .text-xl      { font-size: 1.3rem; }
 .text-2xl     { font-size: 2.5rem; }
 .text-3xl     { font-size: 6rem; }
+.text-4xl     { font-size: 4rem; }
 .font-bold    { font-weight: bold; }
 .text-center  { text-align: center; }
 .text-left    { text-align: left; }
