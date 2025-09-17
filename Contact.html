@@ -25,12 +25,12 @@
   </nav>
   <div class="image">
     <div class="flex drop-box-shadow-2 h-fit w-full my-12 mx-12 rounded-sm p-6 justify-between">
-      <form class="flex flex-col justify-evenly mx-12">
+      <form class="flex flex-col justify-evenly mx-12" action="https://formspree.io/f/xvgbjvnl" method="POST">
         <h1 class="text-4xl font-roboto-slab">Get in Touch</h1>
-        <input class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Name"/>
-        <input class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Email"/>
-        <textarea class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-textarea h-textarea p-1" placeholder="Type your message here"></textarea>
-        <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove">Submit</button>
+        <input name="name" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Name"/>
+        <input name="email" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="email" placeholder="Email"/>
+        <textarea name="message" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-textarea h-textarea p-1" placeholder="Type your message here"></textarea>
+        <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove" type="submit">Submit</button>
       </form>
       <div class="flex flex-col justify-evenly my-12 mx-12">
         <div class="flex">
