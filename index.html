@@ -11,17 +11,24 @@
   <title>Home Page</title>
 </head>
 <body>
-  <nav class="flex h-nav items-center justify-between bg-black pl-4 pr-4">
-    <div class="flex">
-      <h1 class="text-3xl text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
-    </div>
-    <div class="flex w-nav-links justify-evenly text-xl">
+  <nav class="flex h-nav items-center justify-between bg-black w-full">
+    <h1 class="text-3xl w-header pl-4 text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
+
+  <!-- Nav links container -->
+    <div class="nav-links">
       <a class="text-orange text-deco-none" href="index.html">Home</a>
       <a class="text-orange text-deco-none" href="About.html">About</a>
       <a class="text-orange text-deco-none" href="Products.html">Products</a>
       <a class="text-orange text-deco-none" href="Services.html">Services</a>
       <a class="text-orange text-deco-none" href="Contact.html">Contact Us</a>
     </div>
+
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
   </nav>
   <div class="image flex justify-center items-center h-fit">
     <div id="content"></div> <!-- Div that will contain dynamic content once Javascript is added -->
@@ -44,7 +51,7 @@
       </div>
     </div>
   </div>
-  <footer class="flex bg-black justify-evenly items-center text-white p-6">
+  <footer class="footer-1 flex bg-black justify-evenly items-center text-white p-6">
     <ul>
       <h5 class="text-xl">Compliance</h5>
       <li class="text-xs mt-1">Gas Handling</li>
@@ -67,9 +74,37 @@
       <li class="text-xs mt-1">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
       <li class="text-xs mt-1">031-3345789</li>
     </ul>
-    <div class="flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
+    <div class=" flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
       <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
-      <p class="text-center font-roboto-condensed">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
+      <p class="text-center font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
+    </div>
+  </footer>
+  <footer class="footer-2 flex bg-black justify-around items-center text-white p-6">
+    <ul>
+      <h5 class="text-xl">Compliance</h5>
+      <li class="text-xs mt-1">Gas Handling</li>
+      <li class="text-xs mt-1">SABS Certificate</li>
+      <li class="text-xs mt-1 w-li">Regulations and Safe Practices</li>
+    </ul>
+    <ul>
+      <h5 class="text-xl">FAQS</h5>
+      <li class="text-xs mt-1">Gas Tips</li>
+      <li class="text-xs mt-1">Private Policy</li>
+      <li class="text-xs mt-1">Purchases</li>
+    </ul>
+    <ul>
+      <h5 class="text-xl">Head Office</h5>
+      <li class="text-xs mt-1">13 Foreshore<br/>Avenue,Greenwich,<br/>Cape Town</li>
+      <li class="text-xs mt-1">021-7624567</li>
+    </ul>
+    <ul>
+      <h5 class="text-xl">Branch Office</h5>
+      <li class="text-xs mt-1">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
+      <li class="text-xs mt-1">031-3345789</li>
+    </ul>
+    <div class="flex items-center bg-orange w-footer h-footer rounded justify-between gap-2 p-6">
+      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded-sm inset-shadow border-remove">Enquire</button>
+      <p class="font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
 </body>

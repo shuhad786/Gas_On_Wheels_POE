@@ -11,20 +11,27 @@
   <title>Contact Page</title>
 </head>
 <body>
-  <nav class="flex h-nav items-center justify-between bg-black pl-4 pr-4">
-    <div class="flex">
-      <h1 class="text-3xl text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
-    </div>
-    <div class="flex w-nav-links justify-evenly text-xl">
+  <nav class="flex h-nav items-center justify-between bg-black w-full">
+    <h1 class="text-3xl w-header pl-4 text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
+
+  <!-- Nav links container -->
+    <div class="nav-links">
       <a class="text-orange text-deco-none" href="index.html">Home</a>
       <a class="text-orange text-deco-none" href="About.html">About</a>
       <a class="text-orange text-deco-none" href="Products.html">Products</a>
       <a class="text-orange text-deco-none" href="Services.html">Services</a>
       <a class="text-orange text-deco-none" href="Contact.html">Contact Us</a>
     </div>
+
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
   </nav>
   <div class="image">
-    <div class="flex drop-box-shadow-2 h-fit w-full my-12 mx-12 rounded-sm p-6 justify-between">
+    <div class="container flex drop-box-shadow-2 h-fit w-full my-12 mx-12 rounded-sm p-6 justify-between">
       <form class="flex flex-col justify-evenly mx-12" action="https://formspree.io/f/xvgbjvnl" method="POST">
         <h1 class="text-4xl font-roboto-slab">Get in Touch</h1>
         <input name="name" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Name"/>
@@ -32,27 +39,82 @@
         <textarea name="message" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-textarea h-textarea p-1" placeholder="Type your message here"></textarea>
         <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove" type="submit">Submit</button>
       </form>
-      <div class="flex flex-col justify-evenly my-12 mx-12">
+      <div class="flex flex-col justify-between items-center my-12 mx-12">
         <div class="flex">
           <img class="image-1" src="assets/image 8.png" alt="head office map"/>
           <ul>
-            <h5 class="text-orange-dark list-none">Branch Office</h5>
-            <li class="text-orange-dark list-none">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
-            <li class="text-orange-dark list-none">SABS Certificate</li>
+            <h5 class="text-orange-dark list-none text-tab text-mobile">Branch Office</h5>
+            <li class="text-orange-dark list-none text-tab text-mobile">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
+            <li class="text-orange-dark list-none text-tab text-mobile">SABS Certificate</li>
           </ul>
         </div>
         <div class="flex mt-4">
            <ul>
             <h5 class="text-orange-dark">Head Office</h5>
-            <li class="text-orange-dark list-none">13 Foreshore Avenue,<br/>Greenwich,<br/>Cape Town</li>
-            <li class="text-orange-dark list-none">021-7624567</li>
+            <li class="text-orange-dark list-none text-tab text-mobile">13 Foreshore Avenue,<br/>Greenwich,<br/>Cape Town</li>
+            <li class="text-orange-dark list-none text-tab text-mobile">021-7624567</li>
           </ul>
           <img class="image-1" src="assets/image 9.png" alt="branch office map"/>
         </div>
       </div>
     </div>
+    <div class="mobile-container flex drop-box-shadow-2 h-fit w-full my-12 mx-12 rounded-sm p-6 justify-center items-center">
+      <form class="flex flex-col justify-evenly mx-12 gap-4" action="https://formspree.io/f/xvgbjvnl" method="POST">
+        <h1 class="text-4xl font-roboto-slab">Get in Touch</h1>
+        <input name="name" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Name"/>
+        <input name="email" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="email" placeholder="Email"/>
+        <textarea name="message" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-textarea h-textarea p-1" placeholder="Type your message here"></textarea>
+        <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove" type="submit">Submit</button>
+      </form>
+      <div class="flex flex-col justify-between items-center my-12 mx-12 gap-4">
+        <div class="flex justify-center items-center pl-neg">
+          <img class="image-1" src="assets/image 8.png" alt="head office map"/>
+          <ul class="m-0 flex flex-col pl-neg ">
+            <h5 class="text-orange-dark m-4">Branch Office</h5>
+            <li class="text-orange-dark list-none text-tab text-mobile">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
+            <li class="text-orange-dark list-none text-tab text-mobile">SABS Certificate</li>
+          </ul>
+        </div>
+        <div class="flex m-0 pr-4">
+           <ul class="m-0 flex flex-col items-center">
+            <h5 class="text-orange-dark m-4">Head Office</h5>
+            <li class="text-orange-dark list-none text-tab text-mobile">13 Foreshore Avenue,<br/>Greenwich,<br/>Cape Town</li>
+            <li class="text-orange-dark list-none text-tab text-mobile">021-7624567</li>
+          </ul>
+          <img class="image-1 mt-4" src="assets/image 9.png" alt="branch office map"/>
+        </div>
+      </div>
+    </div>
   </div>
-   <footer class="flex bg-black justify-evenly items-center text-white p-6">
+  <footer class="footer-1 flex bg-black justify-evenly items-center text-white p-6">
+    <ul>
+      <h5 class="text-xl">Compliance</h5>
+      <li class="text-xs mt-1 mobile-list">Gas Handling</li>
+      <li class="text-xs mt-1 mobile-list">SABS Certificate</li>
+      <li class="text-xs mt-1 w-li mobile-list">Regulations and Safe Practices</li>
+    </ul>
+    <ul>
+      <h5 class="text-xl">FAQS</h5>
+      <li class="text-xs mt-1 mobile-list">Gas Tips</li>
+      <li class="text-xs mt-1 mobile-list">Private Policy</li>
+      <li class="text-xs mt-1 mobile-list">Purchases</li>
+    </ul>
+    <ul>
+      <h5 class="text-xl">Head Office</h5>
+      <li class="text-xs mt-1 mobile-list">13 Foreshore<br/>Avenue,Greenwich,<br/>Cape Town</li>
+      <li class="text-xs mt-1 mobile-list">021-7624567</li>
+    </ul>
+    <ul>
+      <h5 class="text-xl">Branch Office</h5>
+      <li class="text-xs mt-1 mobile-list">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
+      <li class="text-xs mt-1 mobile-list">031-3345789</li>
+    </ul>
+    <div class="flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
+      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
+      <p class="text-center font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
+    </div>
+  </footer>
+  <footer class="footer-2 flex bg-black justify-around items-center text-white p-6">
     <ul>
       <h5 class="text-xl">Compliance</h5>
       <li class="text-xs mt-1">Gas Handling</li>
@@ -75,9 +137,9 @@
       <li class="text-xs mt-1">456 Glenwood Park<br/>Industria, Business<br/>Park, Durban</li>
       <li class="text-xs mt-1">031-3345789</li>
     </ul>
-    <div class="flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
-      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
-      <p class="text-center font-roboto-condensed">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
+    <div class="flex items-center bg-orange w-footer h-footer rounded justify-between gap-2 p-6">
+      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded-sm inset-shadow border-remove">Enquire</button>
+      <p class="font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
 </body>
