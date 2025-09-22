@@ -234,6 +234,11 @@ html, body {
   list-style-type: none;
 }
 
+svg {
+  width: 30px;
+  height: 30px;
+}
+
 /* Colors */
 .bg-white     { background-color: #fff; }
 .bg-black  { background-color: #000000; }
@@ -261,6 +266,9 @@ html, body {
   html, body {
     margin: 0;
     padding: 0;
+  }
+  .product-mobile-container {
+    display: none;
   }
 }
 
@@ -346,8 +354,27 @@ html, body {
   html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  .w-bubble {
+    width: 70%;
+  }
+
+  .h-bubble {
+    height: 15rem;
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+
+
   /* Hide nav links */
   .nav-links {
+    display: none;
+  }
+
+  .product-mobile-container {
     display: none;
   }
 
@@ -378,6 +405,31 @@ html, body {
   /* Resize heading */
   .text-3xl {
     font-size: 3rem; /* smaller on tablet */
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .text-xl {
+    font-size: 1.2rem;
+  }
+
+  .text-4xl {
+    font-size: 3rem;
+  }
+
+  .tab-size {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .w-button-1 {
+    width: 10rem;
+  }
+  
+  .h-button-1 {
+    height: 2.5rem;
   }
 
   .w-header {
@@ -448,6 +500,15 @@ html, body {
     height: 10rem;
   }
 
+  .pl-products {
+    margin-left: 4rem;
+  }
+
+  .img-products {
+    width: 400px;
+    height: 400px;
+  }
+
   /* Footer */
   .p-6 { 
     padding: 0.3rem; 
@@ -473,6 +534,10 @@ html, body {
   .h-button-2 {
     height: 2rem
   }
+
+  .product-mobile-container {
+    display: none;
+  }
 }
 
 /* Phone (≤639px) */
@@ -486,6 +551,23 @@ html, body {
     font-size: 2rem;
     margin-top: 0;
   }
+
+  .text-2xl {
+    font-size: 1rem;
+  }
+
+  .drop-box-shadow-2 {
+    padding: 1rem;
+  }
+
+  .w-bubble {
+    width: 90%;
+  }
+
+  .h-bubble {
+    height: 17rem;
+  }
+
 
   .text-shadow-solid-orange {
     text-shadow: -3.2px -0.6px 0 #FF4400;
@@ -558,6 +640,9 @@ html, body {
     font-size: 1rem;
   }
 
+  .text-product-mobile {
+    font-size: 0.7rem;
+  }
   /* Smaller images */
   .image-1 {
     width: 6rem;
@@ -570,6 +655,52 @@ html, body {
   .image-3 {
     width: 7rem;
     height: 7rem;
+  }
+  .img-products {
+    width: 250px;
+    height: 250px;
+  }
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr; 
+  gap: 1rem; 
+  width: 200px;
+  aspect-ratio: 1 / 1;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  aspect-ratio: 1 / 1; 
+  display: block;
+}
+
+.image-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 1fr; 
+  gap: 1rem; 
+  width: 550px;
+  aspect-ratio: 1 / 1;
+}
+
+.image-grid-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  aspect-ratio: 1 / 1; 
+  display: block;
+}
+
+  .product-container {
+    display: none;
+  }
+
+  .product-mobile-container {
+    display: flex;
+    flex-direction: row;
   }
 
   /* Smaller footer fonts */
