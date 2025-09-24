@@ -1,59 +1,42 @@
-<a name="readme-top"></a>
--->
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="" alt="logo" width="140"  height="auto" />
-  <br/>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
+
+  - [Tech Stack](#tech-stack)
+
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
-  - [Install](#install)
   - [Usage](#usage)
 - [👥 Author](#author)
-- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Gas On Wheels] <a name="about-project"></a>
+# 📖 [Gas_On_Wheels] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> GasOnWheels is a local business dedicated to providing reliable and safe LP gas supply to households and small businesses.
 
-**[Gas On Wheels]** is a LP gas supply company with product sales, installation and maintenance services
-
-## 🛠 Built With <a name="built-with"></a>
+**[Gas_On_Wheels]** is a...
 
 ### Tech Stack <a name="tech-stack"></a>
 
 - HTML5
 
+- JS(es6)
 - CSS3
-
-- JAVASCRIPT
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com) <!-- Not yet available -->
+- [Live Demo Link] soon to follow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +44,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> This is an html dynamic page with css styling showcasing the dynamic changes of the content as the page changes via navigation leaving the navbar and footer static.
 
 To get a local copy up and running, follow these steps.
 
@@ -69,51 +52,37 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-VSCODE installed
+- Web browser
+- VSCODE
+- Github account
 
 NodeJS installed
 
 A web browser
 
-### Setup
-
-Clone this repository to your desired folder: 
-
-https://github.com/shuhad786/Gas_On_Wheels_POE.git
+> https link: [https://github.com/shuhad786/Gas_On_Wheels_POE.git]
 
 ### Usage
 
 To run the project, execute the following command:
 
-Download the extension "Live Server" from the extensions bar in VSCode
+Install from the extenstions 
 
-Install the extension and right hand click on the index.html select 'live server' option and run the code, it will open up in your browser
+- Live Server (Ritwick Dey)
+- Right hand click on the index.html and use the page
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
+<!-- AUTHOR -->
 
 ## 👥 Author <a name="author"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Shuhad**
+
+👤 **Shuhad Loofer**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
