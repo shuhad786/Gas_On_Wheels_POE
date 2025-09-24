@@ -504,9 +504,21 @@ svg {
     margin-left: 4rem;
   }
 
+  .services-ml {
+    margin-left: 2rem;
+  }
+
   .img-products {
     width: 400px;
     height: 400px;
+  }
+
+  .items-end {
+    align-items: center;
+  }
+
+  .image-grid-2 {
+    width: 400px;
   }
 
   /* Footer */
@@ -643,6 +655,25 @@ svg {
   .text-product-mobile {
     font-size: 0.7rem;
   }
+
+ .items-end {
+    align-items: center;
+  }
+
+  .services-ml {
+    margin-left: 2rem;
+  }
+
+  .mobile-services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
+  }
+
+
   /* Smaller images */
   .image-1 {
     width: 6rem;
@@ -679,10 +710,10 @@ svg {
 
 .image-grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 1fr; 
   gap: 1rem; 
-  width: 550px;
+  width: 200px;
   aspect-ratio: 1 / 1;
 }
 
