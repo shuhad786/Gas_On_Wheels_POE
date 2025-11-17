@@ -9,19 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/456adb4b31.js" crossorigin="anonymous"></script>
 
-  <title>Home Page</title>
+  <title>Gas On Wheels</title>
 </head>
 <body>
   <nav class="flex h-nav items-center justify-between bg-black w-full">
     <h1 class="text-3xl w-header pl-4 text-yellow text-shadow-solid-orange font-roboto-slab">Gas on Wheels</h1>
+    
+    <!-- Search bar-->
+    <form class="search-form">
+      <input type="text" class="search-input" placeholder="Search...">
+    </form>
 
   <!-- Nav links container -->
     <div class="nav-links">
-      <a class="text-orange text-deco-none" href="index.html">Home</a>
-      <a class="text-orange text-deco-none" href="About.html">About</a>
-      <a class="text-orange text-deco-none" href="Products.html">Products</a>
-      <a class="text-orange text-deco-none" href="Services.html">Services</a>
-      <a class="text-orange text-deco-none" href="Contact.html">Contact Us</a>
+      <a href="#" class="text-orange text-deco-none" onclick="loadContent('home'); return false;">Home</a>
+      <a href="#" class="text-orange text-deco-none" onclick="loadContent('about'); return false;">About</a>
+      <a href="#" class="text-orange text-deco-none" onclick="loadContent('products'); return false;">Products</a>
+      <a href="#" class="text-orange text-deco-none" onclick="loadContent('services'); return false;">Services</a>
+      <a href="#" class="text-orange text-deco-none" onclick="loadContent('contact'); return false;">Contact Us</a>
     </div>
 
     <!-- Hamburger button -->
@@ -31,27 +36,9 @@
       <div></div>
     </button>
   </nav>
-  <div class="image flex justify-center items-center h-fit">
-    <div id="content"></div> <!-- Div that will contain dynamic content once Javascript is added -->
-    <div class="flex h-bubble items-center justify-evenly bg-transparent drop-box-shadow w-bubble mt-4 rounded-xl">
-      <div class="tab-size">
-        <button class="flex w-button-1 h-button-1 items-center justify-around text-orange-dark text-xl font-bold bg-black rounded-xl">
-          Order Now
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <!-- Circle part -->
-          <path fill="#FF4400" d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320z"/>
-          
-          <!-- Arrow part -->
-          <path fill="#FFFFFF" d="M451.3 331.3C457.5 325.1 457.5 314.9 451.3 308.7L347.3 204.7C342.7 200.1 335.8 198.8 329.9 201.2C324 203.6 320 209.5 320 216L320 288L216 288C202.7 288 192 298.7 192 312L192 328C192 341.3 202.7 352 216 352L320 352L320 424C320 430.5 323.9 436.3 329.9 438.8C335.9 441.3 342.8 439.9 347.3 435.3L451.3 331.3z"/>
-        </svg>
-        </button>
-      </div>
-      <div class="flex flex-col">
-        <h2 class="font-roboto-slab text-black text-2xl mb-0">Gas delivery or<br/>collect at our store</h2>
-        <p class="font-rubik-italic text-orange text-lg ml-4">Warmth Delivered,<br/>Convenience Guaranteed.</p>
-      </div>
-    </div>
-  </div>
+  
+  <div id="content"></div> <!-- Div that will contain dynamic content once Javascript is added -->
+  
   <footer class="footer-1 flex bg-black justify-evenly items-center text-white p-6">
     <ul>
       <h5 class="text-xl">Compliance</h5>
@@ -108,6 +95,6 @@
       <p class="font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

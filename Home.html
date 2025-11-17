@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/456adb4b31.js" crossorigin="anonymous"></script>
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="image flex justify-center items-center h-fit">
+      <div class="flex h-bubble items-center justify-evenly bg-transparent drop-box-shadow w-bubble mt-4 rounded-xl">
+        <div class="tab-size">
+          <button class="flex w-button-1 h-button-1 items-center justify-around text-orange-dark text-xl font-bold bg-black rounded-xl">
+            Order Now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!-- Circle part -->
+            <path fill="#FF4400" d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320z"/>
+            
+            <!-- Arrow part -->
+            <path fill="#FFFFFF" d="M451.3 331.3C457.5 325.1 457.5 314.9 451.3 308.7L347.3 204.7C342.7 200.1 335.8 198.8 329.9 201.2C324 203.6 320 209.5 320 216L320 288L216 288C202.7 288 192 298.7 192 312L192 328C192 341.3 202.7 352 216 352L320 352L320 424C320 430.5 323.9 436.3 329.9 438.8C335.9 441.3 342.8 439.9 347.3 435.3L451.3 331.3z"/>
+          </svg>
+          </button>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="font-roboto-slab text-black text-2xl mb-0">Gas delivery or<br/>collect at our store</h2>
+          <p class="font-rubik-italic text-orange text-lg ml-4">Warmth Delivered,<br/>Convenience Guaranteed.</p>
+        </div>
+      </div>
+    </div>
+    <div id="lightbox" class="lightbox" style="display:none;">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" src="" alt="Expanded image" />
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
