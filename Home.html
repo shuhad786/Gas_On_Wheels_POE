@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/456adb4b31.js" crossorigin="anonymous"></script>
-
+    <meta name="description" content="Fast and reliable LP Gas delivery and cylinder refills in Cape Town and Durban. Safe, affordable service at your doorstep."/>
     <title>Home Page</title>
   </head>
   <body>
     <div class="image flex justify-center items-center h-fit">
       <div class="flex h-bubble items-center justify-evenly bg-transparent drop-box-shadow w-bubble mt-4 rounded-xl">
         <div class="tab-size">
-          <button class="flex w-button-1 h-button-1 items-center justify-around text-orange-dark text-xl font-bold bg-black rounded-xl">
+          <button onclick="openModal('orderModal')" class="flex w-button-1 h-button-1 items-center justify-around text-orange-dark text-xl font-bold bg-black rounded-xl">
             Order Now
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
             <!-- Circle part -->
@@ -25,6 +25,26 @@
             <path fill="#FFFFFF" d="M451.3 331.3C457.5 325.1 457.5 314.9 451.3 308.7L347.3 204.7C342.7 200.1 335.8 198.8 329.9 201.2C324 203.6 320 209.5 320 216L320 288L216 288C202.7 288 192 298.7 192 312L192 328C192 341.3 202.7 352 216 352L320 352L320 424C320 430.5 323.9 436.3 329.9 438.8C335.9 441.3 342.8 439.9 347.3 435.3L451.3 331.3z"/>
           </svg>
           </button>
+          <!-- Order Modal -->
+            <div id="orderModal" class="modal">
+              <div class="modal-content rounded-xl drop-box-shadow border-remove">
+                <span class="close" onclick="closeModal('orderModal')">&times;</span>
+                <h2 class="text-4xl font-roboto-slab text-center">Order Form</h2>
+                <form action="https://formspree.io/f/xvgbjvnl" method="POST" class="flex flex-col justify-evenly mx-12 gap-4 ">
+                  <input name="address" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Delivery Address" />
+                  <input name="name" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Your Name" />
+                  <input name="contact" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="tel" placeholder="Contact Number" />
+                  <div class="flex justify-between flex-col">
+                    <label class="text-sm font-roboto-x-light">Cylinder Size:</label>
+                    <label><input type="checkbox" name="cylinderSize" value="9kg"> 9kg</label>
+                    <label><input type="checkbox" name="cylinderSize" value="14kg"> 14kg</label>
+                    <label><input type="checkbox" name="cylinderSize" value="19kg"> 19kg</label>
+                    <label><input type="checkbox" name="cylinderSize" value="48kg"> 48kg</label>
+                  </div>
+                  <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove" type="submit">Submit Order</button>
+                </form>
+              </div>
+            </div>
         </div>
         <div class="flex flex-col">
           <h2 class="font-roboto-slab text-black text-2xl mb-0">Gas delivery or<br/>collect at our store</h2>

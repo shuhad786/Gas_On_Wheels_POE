@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+  <meta charset="UTF-8">    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="styles.css">    
+  <title>Gas Delivery</title>    
+  <script src="script.js" defer></script> 
+  <!-- Ensure script is loaded after HTML -->
+</head>
+<body>
+<!-- Enquiry Modal -->
+  <div id="enquiryModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('inquiryModal')">&times;</span>
+      <h2 class="text-4xl font-roboto-slab">Enquiry Form</h2>
+      <form action="https://formspree.io/f/xvgbjvnl" method="POST" class="flex flex-col">
+        <input name="name" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="text" placeholder="Your Name" />
+        <input name="email" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="email" placeholder="Your Email" />
+        <textarea name="message" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-textarea h-textarea p-1" placeholder="Your Inquiry"></textarea>
+        <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove" type="submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

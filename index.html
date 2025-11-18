@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/456adb4b31.js" crossorigin="anonymous"></script>
-
-  <title>Gas On Wheels</title>
+  <meta name="description" content="Fast and reliable LP Gas delivery and cylinder refills in Cape Town and Durban. Safe, affordable service at your doorstep."/>
+  <title>LP Gas Delivery & Refill Services | Gas On Wheels</title>
 </head>
 <body>
   <nav class="flex h-nav items-center justify-between bg-black w-full">
@@ -63,7 +63,7 @@
       <li class="text-xs mt-1">031-3345789</li>
     </ul>
     <div class=" flex items-center bg-orange w-footer h-footer rounded-xl justify-around">
-      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
+      <button onclick="openModal('enquiryModal')" class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded inset-shadow border-remove">Enquire</button>
       <p class="text-center font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
@@ -91,10 +91,23 @@
       <li class="text-xs mt-1">031-3345789</li>
     </ul>
     <div class="flex items-center bg-orange w-footer h-footer rounded justify-between gap-2 p-6">
-      <button class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded-sm inset-shadow border-remove">Enquire</button>
+      <button onclick="openModal('enquiryModal')" class="w-button-2 h-button-2 text-sm font-roboto-x-light text-light-gray rounded-sm inset-shadow border-remove">Enquire</button>
       <p class="font-roboto-condensed text-base">Subscribe to our news letter for more information on<br/>availability of gas cylinders and updates on prices.</p>
     </div>
   </footer>
+  <!-- Enquiry Modal -->
+  <div id="enquiryModal" class="modal">
+    <div class="modal-content rounded-xl drop-box-shadow border-remove">
+      <span class="close" onclick="closeModal('enquiryModal')">&times;</span>
+      <h2 class="text-4xl font-roboto-slab text-center">Enquiry Form</h2>
+      <form action="https://formspree.io/f/xvgbjvnl" method="POST" class="flex flex-col justify-evenly mx-12 gap-4">
+        <input name="name" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1 margin" type="text" placeholder="Your Name" />
+        <input name="email" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-input h-input px-1" type="email" placeholder="Your Email" />
+        <textarea name="message" required class="text-sm font-roboto-x-light rounded inset-shadow border-remove w-textarea h-textarea p-1" placeholder="Your Enquiry"></textarea>
+        <button class="w-button-3 h-button-3 text-lg bg-orange text-white rounded border-remove" type="submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

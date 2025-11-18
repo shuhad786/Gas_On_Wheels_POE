@@ -73,6 +73,7 @@ function loadContent(page) {
     .then(html => {
       mainContent.innerHTML = html;
       setupLightbox();  // Attach lightbox listeners to newly loaded images
+      setupFormValidationAndAjax(); // Setup form validation & AJAX if form exists
     })
     .catch(error => {
       mainContent.innerHTML = `<p>Error loading page: ${error.message}</p>`;
@@ -120,6 +121,7 @@ mainContent.addEventListener('click', function(e) {
 // Lightbox setup function to attach event listeners to images
 function setupLightbox() {
   const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
   const lightboxImg = lightbox.querySelector('.lightbox-img');
   const closeBtn = lightbox.querySelector('.lightbox-close');
 
@@ -160,6 +162,114 @@ function setupLightbox() {
   };
 }
 
+// Setup form validation and AJAX submission for contact form
+function setupFormValidationAndAjax() {
+  const form = document.querySelector('form');
+  if (!form) return;
+
+  const emailInput = form.querySelector('input[name="email"]');
+  const nameInput = form.querySelector('input[name="name"]');
+  const messageInput = form.querySelector('textarea[name="message"]');
+
+  function showError(input, message) {
+    let errorElem = input.nextElementSibling;
+    if (!errorElem || !errorElem.classList.contains('error-message')) {
+      errorElem = document.createElement('div');
+      errorElem.classList.add('error-message');
+      errorElem.style.color = 'red';
+      errorElem.style.fontSize = '0.9em';
+      input.parentNode.insertBefore(errorElem, input.nextSibling);
+    }
+    errorElem.textContent = message;
+    input.classList.add('input-error');
+  }
+
+  function clearError(input) {
+    let errorElem = input.nextElementSibling;
+    if (errorElem && errorElem.classList.contains('error-message')) {
+      errorElem.textContent = '';
+    }
+    input.classList.remove('input-error');
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Clear previous errors
+    clearError(emailInput);
+    clearError(nameInput);
+    clearError(messageInput);
+
+    let valid = true;
+
+    // Validate name
+    if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+      showError(nameInput, 'Please enter your name (at least 2 characters).');
+      valid = false;
+    }
+
+    // Validate email with simple regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailInput.value.trim() || !emailPattern.test(emailInput.value.trim())) {
+      showError(emailInput, 'Please enter a valid email address.');
+      valid = false;
+    }
+
+    // Validate message
+    if (!messageInput.value.trim() || messageInput.value.trim().length < 10) {
+      showError(messageInput, 'Please enter a message (at least 10 characters).');
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    // Prepare form data
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message! We will get back to you shortly.');
+        form.reset();
+      } else {
+        alert('Oops! Something went wrong. Please try again later.');
+      }
+    } catch (error) {
+      alert('Network error. Please check your connection and try again.');
+    }
+  });
+}
+  // Modal functions
+function openModal(modalId) {    
+  const modal = document.getElementById(modalId);    
+  if (modal) {        
+    modal.style.display = "block";    
+  } else {        
+    console.error(`Modal with ID ${modalId} not found.`);    
+}}
+
+function closeModal(modalId) {    
+  const modal = document.getElementById(modalId);    
+  if (modal) {        
+    modal.style.display = "none";    
+  } else {        
+    console.error(`Modal with ID ${modalId} not found.`);    
+}}
+
+// Close the modal when clicking outside of it
+window.onclick = function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+        closeModal(modal.id);
+    }
+  });
+};
 // Initial setup on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   setupSearch();

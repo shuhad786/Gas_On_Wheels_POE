@@ -120,6 +120,7 @@ html, body {
 }
 .h-nav        { height: 10rem; }
 .w-auto       { width: auto; }
+.w-80         { width: 80%; }
 .w-fit        { width: fit-content; }
 .w-bubble     { width: 50%; }
 .w-input      { width: 100%; }
@@ -303,6 +304,41 @@ svg {
   z-index: 1100;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Colors */
 .bg-white     { background-color: #fff; }
 .bg-black  { background-color: #000000; }
@@ -355,6 +391,11 @@ svg {
     width: 300px;
     height: 44px;
     font-size: 1rem;
+  }
+
+  .modal-content {
+    width: 50%; /* Smaller width on very large screens */
+    margin: 10% auto;
   }
 }
 
@@ -449,6 +490,11 @@ svg {
     width: 250px;
     height: 40px;
     font-size: 0.95rem;
+  }
+
+  .modal-content {
+    width: 70%;
+    margin: 12% auto;
   }
 }
 
@@ -686,6 +732,12 @@ svg {
     height: 36px;
     font-size: 0.9rem;
     border-radius: 20px;
+  }
+
+   .modal-content {
+    width: 85%;
+    margin: 15% auto;
+    padding: 15px;
   }
 }
 
@@ -930,6 +982,12 @@ svg {
     font-size: 0.85rem;
     border-radius: 18px;
     padding: 0 12px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 10px;
   }
 }
 
