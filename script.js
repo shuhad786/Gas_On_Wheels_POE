@@ -244,6 +244,24 @@ function setupFormValidationAndAjax() {
     }
   });
 }
+
+// Mobile menu toggle functions
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const hamburger = document.querySelector('.hamburger');
+  const isOpen = menu.classList.toggle('open');
+  menu.setAttribute('aria-hidden', !isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+}
+
+function closeMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const hamburger = document.querySelector('.hamburger');
+  menu.classList.remove('open');
+  menu.setAttribute('aria-hidden', true);
+  hamburger.setAttribute('aria-expanded', false);
+}
+
   // Modal functions
 function openModal(modalId) {    
   const modal = document.getElementById(modalId);    

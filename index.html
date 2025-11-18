@@ -30,11 +30,20 @@
     </div>
 
     <!-- Hamburger button -->
-    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button onclick="toggleMenu()" id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
       <div></div>
       <div></div>
       <div></div>
     </button>
+
+    <!-- Mobile Navigation (hidden by default) -->
+    <div id="mobile-menu" class="mobile-nav text-orange-dark" aria-hidden="true">
+      <a href="#" onclick="loadContent('home'); closeMenu(); return false;">Home</a>
+      <a href="#" onclick="loadContent('about'); closeMenu(); return false;">About</a>
+      <a href="#" onclick="loadContent('products'); closeMenu(); return false;">Products</a>
+      <a href="#" onclick="loadContent('services'); closeMenu(); return false;">Services</a>
+      <a href="#" onclick="loadContent('contact'); closeMenu(); return false;">Contact Us</a>
+    </div>
   </nav>
   
   <div id="content"></div> <!-- Div that will contain dynamic content once Javascript is added -->
