@@ -1,3 +1,37 @@
+## [v1.1.1] - 2025-11-18
+
+### Added
+- Added SEO 2 Modals & robots.txt & sitemap.xml
+- added lightbox and search bar functionality
+- Added and Updated Changelog.md file
+- Add form email message api
+- Update Products.html and styles.css and add images
+- Added html code for services page
+- Added html code for product page
+- Added html code to the contact page
+- Added html code to the About.html
+- Added images and modified index.html with layout
+
+### Changed
+- Merge pull request #2 from shuhad786/Services-page
+- Merge branch 'Development' into Services-page
+- Updated the services page with media queries
+- Update media query for mobile and tablet views
+- Update the navbar and footer to be responsive
+- Update Contact page form styles and layout
+- Update with Services page images and styling
+- Update index.html with styles and background image
+- update the index.html file with links
+- Merge pull request #1 from shuhad786/Home-page
+- update README.md
+- Update README.md
+- Update date and contact number in footer section
+- Update footer for index.html page
+- Update Footer for services page
+- Edit indentation in Products.html
+- Update master branch with initial website files
+- Initial commit
+
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.

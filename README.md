@@ -119,4 +119,19 @@ image 7.png https://www.facebook.com/photo.php?fbid=1900654083524578&id=18779775
 image 8.png Screenshot from google maps
 
 image 9.png Screenshot from google maps
+
+Final POE updates refer to CHANGELOG.md
+
+### Added
+- Added SEO 2 Modals & robots.txt & sitemap.xml
+- added lightbox and search bar functionality
+- Added and Updated Changelog.md file
+- Add form email message api
+- Update Products.html and styles.css and add images
+- Added html code for services page
+- Added html code for product page
+- Added html code to the contact page
+- Added html code to the About.html
+- Added images and modified index.html with layout
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
