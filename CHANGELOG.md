@@ -1,5 +1,11 @@
 ## [v1.1.1] - 2025-11-18
 
+### Changed
+- Updat hamburger menu styles and functionality
+- Update CHANGELOG and README files
+
+## [v1.1.1] - 2025-11-18
+
 ### Added
 - Added SEO 2 Modals & robots.txt & sitemap.xml
 - added lightbox and search bar functionality
